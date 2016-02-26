@@ -9950,7 +9950,7 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"./navbar.vue":6,"vue":2,"vue-hot-reload-api":1,"vueify-insert-css":3}],5:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\nnav.left {\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex; }\n  /* line 7, stdin */\n  nav.left ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n")
+var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\nnav.left {\n  height: 100%;\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex; }\n  /* line 8, stdin */\n  nav.left ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n")
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -9976,7 +9976,7 @@ if (module.hot) {(function () {  module.hot.accept()
   if (!hotAPI.compatible) return
   var id = "/Users/klonguski/WebstormProjects/vue/public/script/components/leftnav.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["/* line 2, stdin */\nnav.left {\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex; }\n  /* line 7, stdin */\n  nav.left ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n"] = false
+    require("vueify-insert-css").cache["/* line 2, stdin */\nnav.left {\n  height: 100%;\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex; }\n  /* line 8, stdin */\n  nav.left ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
@@ -9986,7 +9986,7 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"./navbar.vue":6,"vue":2,"vue-hot-reload-api":1,"vueify-insert-css":3}],6:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("/* line 4, stdin */\nnav ul {\n  -js-display: flex;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-around;\n      -ms-flex-pack: distribute;\n          justify-content: space-around;\n  padding: 0; }\n  /* line 10, stdin */\n  nav ul li {\n    list-style-type: none; }\n\n/* line 15, stdin */\nnav > ul > li {\n  border-bottom: solid black 1px; }\n")
+var __vueify_style__ = require("vueify-insert-css").insert("/* line 4, stdin */\nnav ul {\n  -js-display: flex;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-around;\n      -ms-flex-pack: distribute;\n          justify-content: space-around;\n  padding: 0;\n  margin: 0; }\n  /* line 11, stdin */\n  nav ul li {\n    list-style-type: none; }\n\n/* line 16, stdin */\nnav > ul > li {\n  border-bottom: solid black 1px; }\n")
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10003,7 +10003,7 @@ if (module.hot) {(function () {  module.hot.accept()
   if (!hotAPI.compatible) return
   var id = "/Users/klonguski/WebstormProjects/vue/public/script/components/navbar.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["/* line 4, stdin */\nnav ul {\n  -js-display: flex;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-around;\n      -ms-flex-pack: distribute;\n          justify-content: space-around;\n  padding: 0; }\n  /* line 10, stdin */\n  nav ul li {\n    list-style-type: none; }\n\n/* line 15, stdin */\nnav > ul > li {\n  border-bottom: solid black 1px; }\n"] = false
+    require("vueify-insert-css").cache["/* line 4, stdin */\nnav ul {\n  -js-display: flex;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-around;\n      -ms-flex-pack: distribute;\n          justify-content: space-around;\n  padding: 0;\n  margin: 0; }\n  /* line 11, stdin */\n  nav ul li {\n    list-style-type: none; }\n\n/* line 16, stdin */\nnav > ul > li {\n  border-bottom: solid black 1px; }\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
@@ -10013,7 +10013,7 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":2,"vue-hot-reload-api":1,"vueify-insert-css":3}],7:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\nnav.right {\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  float: right;\n  text-align: right; }\n  /* line 9, stdin */\n  nav.right ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n")
+var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\nnav.right {\n  height: 100%;\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  float: right;\n  text-align: right; }\n  /* line 10, stdin */\n  nav.right ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n")
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10039,7 +10039,7 @@ if (module.hot) {(function () {  module.hot.accept()
   if (!hotAPI.compatible) return
   var id = "/Users/klonguski/WebstormProjects/vue/public/script/components/rightnav.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["/* line 2, stdin */\nnav.right {\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  float: right;\n  text-align: right; }\n  /* line 9, stdin */\n  nav.right ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n"] = false
+    require("vueify-insert-css").cache["/* line 2, stdin */\nnav.right {\n  height: 100%;\n  max-width: 100px;\n  -js-display: inline-flex;\n  display: -webkit-inline-box;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  float: right;\n  text-align: right; }\n  /* line 10, stdin */\n  nav.right ul {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {

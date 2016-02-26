@@ -4,6 +4,7 @@
 <style lang="scss">
     nav.right
     {
+        height: 100%;
         max-width: 100px;
         -js-display: inline-flex;
         display: inline-flex;

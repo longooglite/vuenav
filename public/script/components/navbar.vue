@@ -22,6 +22,7 @@
             display: flex;
             justify-content: space-around;
             padding: 0;
+            margin: 0;
             li
             {
                 list-style-type: none;
