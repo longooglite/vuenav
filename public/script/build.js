@@ -9986,24 +9986,40 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"./navbar.vue":6,"vue":2,"vue-hot-reload-api":1,"vueify-insert-css":3}],6:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("/* line 4, stdin */\nnav ul {\n  -js-display: flex;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-around;\n      -ms-flex-pack: distribute;\n          justify-content: space-around;\n  padding: 0;\n  margin: 0; }\n  /* line 11, stdin */\n  nav ul li {\n    list-style-type: none; }\n\n/* line 16, stdin */\nnav > ul > li {\n  border-bottom: solid black 1px; }\n")
+var __vueify_style__ = require("vueify-insert-css").insert("\nnav>ul\n{\n    -js-display: flex;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-justify-content: space-around;\n        -ms-flex-pack: distribute;\n            justify-content: space-around;\n    padding: 0;\n    margin: 0;\n}\nnav>ul>li.active\n{\n    color: red;\n}\nnav>ul li\n{\n    list-style-type: none;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: end;\n    -webkit-align-items: flex-end;\n        -ms-flex-align: end;\n            align-items: flex-end;\n}\nnav>ul li ul li span\n{\n    display: block;\n    width: 100%;\n    text-align: right;\n}\n")
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = {
-    components: {}
+    data: function data() {
+        return {
+            active: 0,
+            cats: ["personal info", "national provider identifier information", {
+                "title": "background and education check authorization",
+                "subcats": ["general", "consent", "disclosures", "applicant rights", "personal and education summary"]
+            }, "authorization, release, and immunity (ari)", "submit candidate items"]
+        };
+    },
+
+    components: {},
+    methods: {
+        test: function test(string, event) {
+            console.log(string, event);
+            event.target.active = "active";
+        }
+    }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "<nav><ul><li><span>personal info</span></li><li><span>national provider identifier information</span></li><li><ul><li><span>general</span></li><li><span>consent</span></li><li><span>disclosures</span></li><li><span>applicant rights</span></li><li><span>personal and education summary</span></li></ul></li><li><span>authorization, release, and immunity (ari)</span></li><li><span>submit candidate items</span></li></ul></nav>"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "<nav><ul><li v-for=\"cat in cats\" v-on:click=\"test()\" v-bind:class=\"active == {{$index}} ? : 'active'\">{{$index}}<span v-if=\"typeof cat == 'string' || cat instanceof String\">{{cat}}</span><span v-else=\"v-else\">{{cat.title}}<ul v-else=\"v-else\"><li v-for=\"subcat in cat.subcats\"><span>{{subcat}}</span></li></ul></span></li></ul></nav>"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   var id = "/Users/klonguski/WebstormProjects/vue/public/script/components/navbar.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["/* line 4, stdin */\nnav ul {\n  -js-display: flex;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-around;\n      -ms-flex-pack: distribute;\n          justify-content: space-around;\n  padding: 0;\n  margin: 0; }\n  /* line 11, stdin */\n  nav ul li {\n    list-style-type: none; }\n\n/* line 16, stdin */\nnav > ul > li {\n  border-bottom: solid black 1px; }\n"] = false
+    require("vueify-insert-css").cache["\nnav>ul\n{\n    -js-display: flex;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-justify-content: space-around;\n        -ms-flex-pack: distribute;\n            justify-content: space-around;\n    padding: 0;\n    margin: 0;\n}\nnav>ul>li.active\n{\n    color: red;\n}\nnav>ul li\n{\n    list-style-type: none;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: end;\n    -webkit-align-items: flex-end;\n        -ms-flex-align: end;\n            align-items: flex-end;\n}\nnav>ul li ul li span\n{\n    display: block;\n    width: 100%;\n    text-align: right;\n}\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
