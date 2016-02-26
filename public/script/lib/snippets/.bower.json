@@ -1,0 +1,14 @@
+{
+  "name": "snippets",
+  "homepage": "https://github.com/longooglite/snippets",
+  "_release": "4fa307da89",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4fa307da89f6c1cf243da49b5ccc90e582edd227"
+  },
+  "_source": "https://github.com/longooglite/snippets.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/longooglite/snippets.git",
+  "_direct": true
+}
